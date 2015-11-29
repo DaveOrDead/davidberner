@@ -1,0 +1,11 @@
+{
+  "name": "david-berner",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "scally": ""
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
