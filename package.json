@@ -1,0 +1,29 @@
+{
+	"name": "davidberner",
+	"version": "1.0.0",
+	"description": "This is a really simple site for my homepage which can be viewed at [http://www.davidberner.co.uk](http://www.davidberner.co.uk).",
+	"main": "index.html",
+	"repository": {
+		"type": "git",
+		"url": "git+https://davislurve@github.com/davislurve/davidberner.git"
+		},
+		"author": "@davislurve",
+		"bugs": {
+			"url": "https://github.com/davislurve/davidberner/issues"
+			},
+			"homepage": "https://github.com/davislurve/davidberner#readme",
+			"scripts": {
+				"scss": "node-sass --output-style compressed -o assets/css scss",
+				"autoprefixer": "postcss -u autoprefixer -r assets/css/style.css",
+				"build": "npm run scss && npm run autoprefixer",
+				"watch": "onchange 'src/scss/**.scss' -- npm run build",
+				"deploy": "gh-pages-deploy",
+    			"clean-source": "rimraf README.md src webroot package.json"
+				},
+				"devDependencies": {
+					"autoprefixer": "^6.3.3",
+					"node-sass": "^3.4.2",
+					"onchange": "^2.0.0",
+					"postcss-cli": "^2.5.1"
+				}
+			}
