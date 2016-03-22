@@ -17,8 +17,7 @@
     "autoprefixer": "postcss -u autoprefixer -r assets/css/style.css",
     "build": "npm run scss && npm run autoprefixer",
     "watch": "onchange 'src/scss/**.scss' -- npm run build",
-    "deploy": "gh-pages-deploy",
-    "clean-source": "rimraf README.md scss webroot package.json"
+    "deploy": "gh-pages-deploy",    "clean-source": "rimraf README.md scss webroot package.json"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
