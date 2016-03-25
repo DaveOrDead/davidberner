@@ -17,12 +17,11 @@
     "autoprefixer": "postcss -u autoprefixer -r assets/css/style.css",
     "build": "npm run scss && npm run autoprefixer",
     "watch": "onchange 'src/scss/**.scss' -- npm run build",
-    "deploy": "git checkout gh-pages && git reset --hard origin/master && npm run clean-source && git add -A . && git commit -a -m 'gh-pages update' && git push origin gh-pages --force && git checkout master",
-    "clean-source": "rimraf -f README.md scss webroot package.json"
+    "deploy": "./deploy.sh",
+    "clean-source": "rimraf -f README.md package.json"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
-    "gh-pages-deploy": "^0.4.1",
     "node-sass": "^3.4.2",
     "onchange": "^2.0.0",
     "postcss-cli": "^2.5.1"
