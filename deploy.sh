@@ -2,7 +2,7 @@ git checkout gh-pages
 
 git reset --hard origin/master
 
-cp -r dist/* .
+#cp -r dist/* .
 
 npm run clean-source
 
