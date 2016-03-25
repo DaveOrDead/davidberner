@@ -18,7 +18,7 @@
     "build": "npm run scss && npm run autoprefixer",
     "watch": "onchange 'src/scss/**.scss' -- npm run build",
     "deploy": "./deploy.sh",
-    "clean-source": "rimraf -f README.md package.json"
+    "clean-source": "rimraf -f README.md scss db_rebuild.sublime-project package.json"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
