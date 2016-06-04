@@ -5,25 +5,27 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://davislurve@github.com/davislurve/davidberner.git"
+    "url": "git+https://daveordead@github.com/daveordead/davidberner.git"
   },
-  "author": "@davislurve",
+  "author": "@DaveOrDead",
   "bugs": {
-    "url": "https://github.com/davislurve/davidberner/issues"
+    "url": "https://github.com/daveordead/davidberner/issues"
   },
-  "homepage": "https://github.com/davislurve/davidberner#readme",
+  "homepage": "https://github.com/daveordead/davidberner#readme",
   "scripts": {
     "scss": "node-sass --output-style compressed -o assets/css scss",
     "autoprefixer": "postcss -u autoprefixer -r assets/css/style.css",
     "build": "npm run scss && npm run autoprefixer",
     "watch": "onchange 'src/scss/**.scss' -- npm run build",
     "deploy": "./deploy.sh",
-    "clean-source": "rimraf -f README.md scss db_rebuild.sublime-project package.json"
+    "clean-source": "rimraf -f README.md scss db_rebuild.sublime-project package.json",
+    "start": "parallelshell 'npm run build' 'npm run watch'"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "node-sass": "^3.4.2",
     "onchange": "^2.0.0",
+    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.1"
   }
 }

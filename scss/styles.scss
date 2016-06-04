@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-
 /* ============================================================================
 @MASTER STYLESHEET
 ========================================================================= */
 
-$spacing-base: 2.5em;
+$spacing: 2.5rem;
+
+$spacing-small: $spacing / 2;
 
 html {
     box-sizing: border-box;
@@ -14,8 +15,8 @@ html {
     font-size: 1em;
     line-height: 1.7;
     overflow-y: scroll;
-    padding-bottom: $spacing-base / 2;
-    padding-top: $spacing-base;
+    padding-bottom: $spacing-small;
+    padding-top: $spacing;
 }
 
 // Simple reset
@@ -49,26 +50,27 @@ a:hover {
 
 .l-container {
     margin: 0 auto;
-    max-width: 31.25em;
+    max-width: 31.25rem;
 }
 
-header {
+.l-header {
     border-bottom: 1px solid #eee;
-    margin-bottom: $spacing-base;
+    margin-bottom: $spacing;
+    text-align: center;
 }
 
 // headings
 
 .heading--large {
     color: #222;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: -2px;
 }
 
 .heading--medium {
     color: #aaa;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 300;
 }
 
@@ -79,8 +81,12 @@ header {
     text-align: center;
 }
 
-.h-mb-base {
-    margin-bottom: $spacing-base;
+.h-spacing {
+    margin-bottom: $spacing;
+}
+
+.h-spacing-small {
+    margin-bottom: $spacing-small;
 }
 
 
@@ -88,11 +94,17 @@ header {
 
 .c-card {
     color: #333;
-    padding: ($spacing-base / 2) 1.56em;
+    padding: $spacing-small;
     text-decoration: none;
     transition: ease-in-out 1s;
 }
 
-.copyright {
-    font-size: 0.875em;
+.c-card__sub-title {
+    color: #aaa;
+    display: block;
+    font-weight: 300;
+}
+
+.c-copyright {
+    font-size: 0.875rem;
 }
