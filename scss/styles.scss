@@ -107,3 +107,15 @@ a:hover {
 .c-copyright {
     font-size: 0.875rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #212121;
+        color: #eee;
+
+        .heading--large,
+        .c-card {
+            color: #eee;
+        }
+    }
+}
