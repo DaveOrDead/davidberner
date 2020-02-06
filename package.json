@@ -1,7 +1,7 @@
 {
   "name": "davidberner",
   "version": "1.0.0",
-  "description": "This is a really simple site for my homepage which can be viewed at [http://www.davidberner.co.uk](http://www.davidberner.co.uk).",
+  "description": "This is a really simple site for my homepage which can be viewed at [https://www.davidberner.co.uk](https://www.davidberner.co.uk).",
   "main": "index.html",
   "repository": {
     "type": "git",
@@ -22,10 +22,10 @@
     "start": "parallelshell 'npm run build' 'npm run watch'"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
-    "node-sass": "^4.13.0",
+    "autoprefixer": "^9.7.4",
+    "node-sass": "^4.13.1",
     "onchange": "^6.1.0",
     "parallelshell": "^3.0.2",
-    "postcss-cli": "^6.1.3"
+    "postcss-cli": "^7.1.0"
   }
 }
