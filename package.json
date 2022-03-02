@@ -22,10 +22,10 @@
     "start": "parallelshell 'npm run build' 'npm run watch'"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "node-sass": "^4.13.1",
-    "onchange": "^6.1.0",
+    "autoprefixer": "^10.4.2",
+    "node-sass": "^7.0.1",
+    "onchange": "^7.1.0",
     "parallelshell": "^3.0.2",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^9.1.0"
   }
 }
