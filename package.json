@@ -19,7 +19,7 @@
     "watch": "onchange 'src/scss/**.scss' -- npm run build",
     "deploy": "./deploy.sh",
     "clean-source": "rimraf -f README.md scss db_rebuild.sublime-project package.json",
-    "start": "parallelshell 'npm run build' 'npm run watch'"
+    "start": "npm run build && npm run watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
