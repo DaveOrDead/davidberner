@@ -6,17 +6,17 @@
 
 $spacing: 2.5rem;
 
-$spacing-small: $spacing / 2;
+$spacing-small: $spacing / 4;
 
 html {
-    box-sizing: border-box;
-    color: #555;
-    font-family: sans-serif;
-    font-size: 1em;
-    line-height: 1.7;
-    overflow-y: scroll;
-    padding-bottom: $spacing-small;
-    padding-top: $spacing;
+  box-sizing: border-box;
+  color: #555;
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.7;
+  overflow-y: scroll;
+  padding-bottom: $spacing-small;
+  padding-top: $spacing;
 }
 
 // Simple reset
@@ -24,98 +24,97 @@ html {
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 // links
 
 a {
-    color: #3AB795;
-    text-decoration: none;
+  color: #3ab795;
+  text-decoration: none;
 }
 
 a:hover {
-    color: darken(#3AB795, 4%);
-    text-decoration: underline;
-    transition: all 0.3s;
+  color: darken(#3ab795, 4%);
+  text-decoration: underline;
+  transition: all 0.3s;
 }
 
 // layout
 
 .l-container {
-    margin: 0 auto;
-    max-width: 31.25rem;
+  margin: 0 auto;
+  max-width: 31.25rem;
 }
 
 .l-header {
-    border-bottom: 1px solid #eee;
-    margin-bottom: $spacing;
-    text-align: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: $spacing;
+  text-align: center;
 }
 
 // headings
 
 .heading--large {
-    color: #222;
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: -2px;
+  color: #222;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -2px;
 }
 
 .heading--medium {
-    color: #aaa;
-    font-size: 1.25rem;
-    font-weight: 300;
+  color: #aaa;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
-
 
 // Helpers
 
 .h-txt-center {
-    text-align: center;
+  text-align: center;
 }
 
 .h-spacing {
-    margin-bottom: $spacing;
+  margin-bottom: $spacing;
 }
 
 .h-spacing-small {
-    margin-bottom: $spacing-small;
+  margin-bottom: $spacing-small;
 }
-
 
 // Components
 
 .c-card {
-    color: #333;
-    padding: $spacing-small;
-    text-decoration: none;
+  color: #333;
+  margin-bottom: $spacing-small;
+  padding: $spacing-small;
+  text-decoration: none;
 }
 
 .c-card__sub-title {
-    color: #aaa;
-    display: block;
-    font-weight: 300;
+  color: #aaa;
+  display: block;
+  font-weight: 300;
 }
 
 .c-copyright {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        background-color: #212121;
-        color: #eee;
+  html {
+    background-color: #212121;
+    color: #eee;
 
-        .heading--large,
-        .c-card {
-            color: #eee;
-        }
+    .heading--large,
+    .c-card {
+      color: #eee;
     }
+  }
 }
